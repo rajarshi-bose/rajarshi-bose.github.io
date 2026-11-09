@@ -466,6 +466,23 @@ const icons = {
     "....##..##......",
     "...#......#.....",
     "..#........#...."]),
+  analyst: px([
+    "................",
+    "..#########.....",
+    "..#.......##....",
+    "..#.......#.#...",
+    "..#.......####..",
+    "..#..........#..",
+    "..#......##..#..",
+    "..#......##..#..",
+    "..#...##.##..#..",
+    "..#...##.##..#..",
+    "..#.#.##.##..#..",
+    "..#.#.##.##..#..",
+    "..#..........#..",
+    "..############..",
+    "................",
+    "................"]),
   house: `<svg viewBox="-2 -2 20 20" shape-rendering="crispEdges" aria-hidden="true"><path fill="currentColor" d="M3 1H5V3H6V2H7V1H9V2H10V3H11V4H12V5H13V6H14V15H2V6H3Z"/></svg>`,
   tank: px([
     "................",
@@ -536,6 +553,9 @@ const projects = [
   { id: "food-plotter", gallery: [{"caption": "Foods plotted by cost, portion size and taste"}], tags: ["tool", "web development", "data visualization", "3d"], months: "Oct – Present", year: 2026, title: "Food Plotter", field: "Tool", status: "In progress", img: IMG.fp, launch: "https://jarsh.us/food-plotter/",
     summary: "Plot foods in a rotatable 3D space by cost, portion size, and taste.",
     facts: { Axes: "Cost, portion, taste", Saving: "In your browser", Role: "Designer & developer" }, text: [] },
+  { id: "earnings-analyst", gallery: [{"caption": "A release scored word by word, next to the share price before the quarter"}], tags: ["tool", "web development", "data visualization", "finance", "text analysis", "end to end"], months: "Nov", year: 2026, title: "Earnings Report Qualitative Analyst", field: "Tool", status: "In progress", icon: "analyst", launch: "https://jarsh.us/earnings-analyst/",
+    summary: "Reads the tone of an S&P 500 earnings release word by word, next to how the stock moved in the two quarters before.",
+    facts: { Data: "SEC EDGAR filings", Coverage: "S&P 500", Role: "Designer & developer" }, text: [] },
   { id: "jarsh-us", launch: "https://jarsh.us/", report: "reports/jarsh-us-development-report.pdf",
     gallery: [{"src": "img/gallery/jarsh-us/home.png", "smooth": true, "caption": "Home: the name sets in letter by letter above a 12-column grid"},
               {"src": "img/gallery/jarsh-us/index.png", "smooth": true, "caption": "Project index with the type menu open and status dots"},
@@ -700,6 +720,7 @@ function artView() {
 
 // ---------- Change log (newest first; each update adds 0.01) ----------
 const CHANGELOG = [
+  { v: "1.44", date: "2026-11-09", notes: ["Added Earnings Report Qualitative Analyst, live at jarsh.us/earnings-analyst"] },
   { v: "1.43", date: "2026-10-23", notes: ["Lumina Fluids Bay report: equations and variables set upright in the site typeface"] },
   { v: "1.42", date: "2026-10-23", notes: ["Lumina Fluids Bay report is back to the dark theme on every page"] },
   { v: "1.41", date: "2026-10-23", notes: ["Lumina Fluids Bay report: dark cover with light inner pages, and 6061 aluminum selected lines"] },
