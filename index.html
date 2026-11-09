@@ -554,7 +554,7 @@ const projects = [
     summary: "Plot foods in a rotatable 3D space by cost, portion size, and taste.",
     facts: { Axes: "Cost, portion, taste", Saving: "In your browser", Role: "Designer & developer" }, text: [] },
   { id: "earnings-analyst", gallery: [{"caption": "A release scored word by word, next to the share price before the quarter"}], tags: ["tool", "web development", "data visualization", "finance", "text analysis", "end to end"], months: "Nov", year: 2026, title: "Earnings Report Qualitative Analyst", field: "Tool", status: "In progress", icon: "analyst", launch: "https://jarsh.us/earnings-analyst/",
-    summary: "Reads the tone of an S&P 500 earnings release word by word, next to how the stock moved in the two quarters before.",
+    summary: "Reads the tone of an S&P 500 earnings release word by word, next to how the stock moved before, during and after the quarter.",
     facts: { Data: "SEC EDGAR filings", Coverage: "S&P 500", Role: "Designer & developer" }, text: [] },
   { id: "jarsh-us", launch: "https://jarsh.us/", report: "reports/jarsh-us-development-report.pdf",
     gallery: [{"src": "img/gallery/jarsh-us/home.png", "smooth": true, "caption": "Home: the name sets in letter by letter above a 12-column grid"},
@@ -720,6 +720,7 @@ function artView() {
 
 // ---------- Change log (newest first; each update adds 0.01) ----------
 const CHANGELOG = [
+  { v: "1.45", date: "2026-11-09", notes: ["Earnings Report Qualitative Analyst now shows prices before, during and after the reported quarter"] },
   { v: "1.44", date: "2026-11-09", notes: ["Added Earnings Report Qualitative Analyst, live at jarsh.us/earnings-analyst"] },
   { v: "1.43", date: "2026-10-23", notes: ["Lumina Fluids Bay report: equations and variables set upright in the site typeface"] },
   { v: "1.42", date: "2026-10-23", notes: ["Lumina Fluids Bay report is back to the dark theme on every page"] },
